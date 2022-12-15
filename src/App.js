@@ -48,8 +48,8 @@ function App() {
                 <Route path="/register" element={<h1>Регистрация</h1>}/>
                 <Route path="/login" element={<h1>Авторизация</h1>}/>
                 <Route path="/password-reset" element={<h1>Восстановление пароля</h1>}/>
-                <Route path="create-box" element={<h1>Создание коробки</h1>}/>
-                <Route path="box-created" element={<h1>Коробка создана</h1>}/>
+                <Route path="/create-box" element={<h1>Создание коробки</h1>}/>
+                <Route path="/box-created" element={<h1>Коробка создана</h1>}/>
 
                 <Route path="/box">
                     <Route index element={<h1>Коробка</h1>}/>

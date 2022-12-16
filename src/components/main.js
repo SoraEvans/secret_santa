@@ -13,9 +13,6 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 2rem 0;
-// background: #FEEAEA;
-
-
 `;
 
 const Timer = styled.div`
@@ -42,7 +39,6 @@ font-weight: 700;
 font-size: 30px;
 line-height: 50px;
 background-color: #C0C0C0;
-
 `;
 
 const Text = styled.span`
@@ -50,7 +46,6 @@ font-weight: 400;
 font-size: 20px;
 line-height: 35px;
 background-color: #C0C0C0;
-
 `;
 
 const Main = () => (

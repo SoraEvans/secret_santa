@@ -12,8 +12,8 @@ const Home = () => (
         <GlStyles />
         <Header />
         <Main />
-        <Instr />
         <MkBoxBtn />
+        <Instr />
         <Footer />
     </>
 )

@@ -12,7 +12,6 @@ import styled from 'styled-components'
 // *******Стили********
 const AccordionSection = styled.section`
   background-color: #ffe7e7;
-  min-height: 900px;
   padding: 120px 0;
 `
 //

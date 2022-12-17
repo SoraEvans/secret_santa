@@ -1,9 +1,8 @@
 import React from 'react';
+import AccordionFaq from './AccordionFaq'
 
 const Instructions = () => (
-    <section>
-        <div className="Instr">Instructions</div>
-    </section>
-);
+  <AccordionFaq/>
+)
 
 export default Instructions;

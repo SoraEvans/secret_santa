@@ -4,8 +4,7 @@ import './App.css'
 import RegisterPage from './pages/register'
 import LoginPage from './pages/login'
 import PasswordResetPage from './pages/password-reset'
-import AccordionFaq from './components/AccordionFaq'
-import Home from './pages/home.js'
+import Home from './pages/home'
 
 function App() {
   return (
@@ -47,7 +46,7 @@ function App() {
           </li>
         </ul>
       </nav>
-        <AccordionFaq />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<RegisterPage />} />

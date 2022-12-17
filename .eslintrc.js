@@ -37,6 +37,7 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 'warn',
     'jsx-a11y/click-events-have-key-events': 'warn',
     'import/no-cycle': 'off',
+    'import/no-named-as-default': 'off',
     'react/no-unstable-nested-components': 'warn',
     'import/no-import-module-exports': 'off',
     camelcase: 'off',

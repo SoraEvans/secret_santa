@@ -6,7 +6,7 @@ import { AuthForm, Input } from './auth-styles'
 //
 // }
 
-export const LoginPage = () => {
+const LoginPage = () => {
   const [form, setForm] = useState({ email: '', password: '' })
 
   const handleChangeForm = e => {

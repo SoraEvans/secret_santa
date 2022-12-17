@@ -6,7 +6,7 @@ import { AuthForm, Input } from './auth-styles'
 
 // }
 
-export const PasswordResetPage = () => {
+const PasswordResetPage = () => {
   const [form, setForm] = useState({ email: '' })
 
   const handleChangeForm = event => {

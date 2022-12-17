@@ -20,7 +20,7 @@ color: #000000;
   margin: 0 auto;
   display: block;
   cursor: pointer;
-    `;
+`;
 
 const Spin = keyframes`
     0% {
@@ -35,7 +35,7 @@ const SantaBoxBtnImg = styled.img`
       animation-name: ${Spin};
  animation-duration: 8s;
  animation-iteration-count: infinite;
-       `;
+`;
 
 const MkBoxBtn = () => (
     <BtnSec>
@@ -44,7 +44,6 @@ const MkBoxBtn = () => (
             </SantaBoxBtn>
         </Cont>
     </BtnSec>
-
 );
 
 export default MkBoxBtn;

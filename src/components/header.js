@@ -4,6 +4,8 @@ import Cont from "./style_cont";
 
 const HeaderEl = styled.header`
 background: #FEEAEA;
+background-image: url(/img/pngwing1.png);
+background-size: 30%;
 `;
 
 const Wrapper = styled.div`
@@ -11,7 +13,6 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 2rem 0;
-background: #FEEAEA;
 `;
 
 const Logo = styled.a.attrs({
@@ -19,10 +20,14 @@ const Logo = styled.a.attrs({
 })`
 color: black;
 text-decoration: none;
+background-color: #C0C0C0;
+padding: 5px;
 `;
 
 const Menu = styled.div`
-color: orange;
+color: black;
+background-color: #C0C0C0;
+padding: 5px;
 `;
 
 const Header = () => (
@@ -30,7 +35,7 @@ const Header = () => (
     <HeaderEl>
         <Cont>
             <Wrapper>
-                <Logo><span style={{ color: 'orange' }}>Logo</span></Logo>
+                <Logo><span style={{ color: '#FF5539' }}>Logo</span></Logo>
                 <Menu>Меню</Menu>
             </Wrapper>
         </Cont>

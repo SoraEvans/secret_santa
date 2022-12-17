@@ -1,7 +1,9 @@
 import React from 'react'
 import { Routes, Link, Route } from 'react-router-dom'
-import AccordionFaq from './components/AccordionFaq'
 import './App.css'
+import AccordionFaq from './components/AccordionFaq'
+import Home from './pages/home.js'
+
 
 function App() {
   return (
@@ -46,7 +48,7 @@ function App() {
       <AccordionFaq />
 
       <Routes>
-        <Route path="/" element={<h1>Главная</h1>} />
+        <Route path="/" element={<Home />} />
         <Route path="/register" element={<h1>Регистрация</h1>} />
         <Route path="/login" element={<h1>Авторизация</h1>} />
         <Route

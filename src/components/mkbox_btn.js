@@ -1,7 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-const MkBoxBtn = () => (
-    <button type="button">Button</button>
-);
+const MkBoxBtn = () => <button type="button">Button</button>
 
-export default MkBoxBtn;
+export default MkBoxBtn

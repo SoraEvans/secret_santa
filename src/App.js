@@ -1,9 +1,11 @@
 import React from 'react'
 import { Routes, Link, Route } from 'react-router-dom'
 import './App.css'
+import RegisterPage from './pages/register'
+import LoginPage from './pages/login'
+import PasswordResetPage from './pages/password-reset'
 import AccordionFaq from './components/AccordionFaq'
 import Home from './pages/home.js'
-
 
 function App() {
   return (
@@ -45,16 +47,12 @@ function App() {
           </li>
         </ul>
       </nav>
-      <AccordionFaq />
-
+        <AccordionFaq />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/register" element={<h1>Регистрация</h1>} />
-        <Route path="/login" element={<h1>Авторизация</h1>} />
-        <Route
-          path="/password-reset"
-          element={<h1>Восстановление пароля</h1>}
-        />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/password-reset" element={<PasswordResetPage />} />
         <Route path="/create-box" element={<h1>Создание коробки</h1>} />
         <Route path="/box-created" element={<h1>Коробка создана</h1>} />
 

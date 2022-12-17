@@ -1,11 +1,11 @@
 import React from 'react';
-import GlStyles from '../components/style_global.js';
-import Header from '../components/header.js';
-import Main from '../components/main.js';
-import Instr from '../components/instructions.js';
+import GlStyles from '../components/style_global';
+import Header from '../components/header';
+import Main from '../components/main';
+import Instr from '../components/instructions';
 // дефолтное поэтому импорт без фигурных скобок
-import MkBoxBtn from '../components/mkbox_btn.js';
-import Footer from '../components/footer.js';
+import MkBoxBtn from '../components/mkbox_btn';
+import Footer from '../components/footer';
 
 const Home = () => (
     <>

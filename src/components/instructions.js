@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-
+import Cont from "./style_cont";
 
 const InstrSec = styled.section`
 background: #FFFFFF;

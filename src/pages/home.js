@@ -4,18 +4,19 @@ import Header from '../components/header'
 import Main from '../components/main'
 import Instr from '../components/instructions'
 // дефолтное поэтому импорт без фигурных скобок
-import MkBoxBtn from '../components/mkbox_btn'
+
 import Footer from '../components/footer'
+import MkBoxBtn from '../components/mkbox_btn'
 
 const Home = () => (
-    <>
-        <GlStyles />
-        <Header />
-        <Main />
-        <MkBoxBtn />
-        <Instr />
-        <Footer />
-    </>
+  <>
+    <GlStyles />
+    <Header />
+    <Main />
+    <MkBoxBtn />
+    <Instr />
+    <Footer />
+  </>
 )
 
-export default Home;
+export default Home

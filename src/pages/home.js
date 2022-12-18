@@ -7,15 +7,17 @@ import Instr from '../components/instructions'
 
 import Footer from '../components/footer'
 import MkBoxBtn from '../components/mkbox_btn'
+import Carousel from '../components/Carousel'
 
 const Home = () => (
   <>
-    <GlStyles />
-    <Header />
-    <Main />
-    <MkBoxBtn />
-    <Instr />
-    <Footer />
+      <GlStyles/>
+      <Header/>
+      <Main/>
+      <MkBoxBtn/>
+      <Instr/>
+      <Carousel/>
+      <Footer/>
   </>
 )
 

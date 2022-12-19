@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const SantaBoxBtn = styled.div`
@@ -25,9 +26,11 @@ const SantaBtn = styled.button`
 `
 
 const HeroSectionBtn = () => (
-  <SantaBoxBtn>
-    <SantaBtn>Стать Сантой</SantaBtn>
-  </SantaBoxBtn>
+  <Link to="/register" style={{ textDecoration: 'none' }}>
+    <SantaBoxBtn>
+      <SantaBtn>Стать Сантой</SantaBtn>
+    </SantaBoxBtn>
+  </Link>
 )
 
 export default HeroSectionBtn

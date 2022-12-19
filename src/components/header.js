@@ -1,12 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Cont from './style_cont'
 
 const HeaderEl = styled.header`
-  background: #feeaea;
-  background-image: url(/img/pngwing1.png);
-  background-size: 30%;
+  background: #c4c5f6;
 `
 
 const Wrapper = styled.div`

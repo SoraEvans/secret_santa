@@ -2,11 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import Cont from './style_cont'
 import CountdownTimer from './CountdownTimer'
+import HeroSectionBtn from './HeroSectionBtn'
+import Header from './header'
+import SnowFall from './SnowFall'
 
-const MainSec = styled.main`
-  background: #feeaea;
-  background-image: url(/img/pngwing1.png);
-  background-size: 30%;
+const Hero = styled.section`
+  background: #c4c5f6;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 60px 0;
+  height: 90vh;
 `
 
 const Wrapper = styled.div`
@@ -14,52 +19,48 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+  margin: 0 0 20px 0;
 `
 
 const Timer = styled.div`
-  min-height: 297px;
+  min-height: 300px;
   text-align: center;
-  padding-top: 100px;
+  margin: 0 0 20px 0;
 `
 
 const LeftTextBlock = styled.div`
-  width: 38%;
-  padding-bottom: 80px;
+  max-width: 38%;
   text-align: left;
 `
 
 const RightTextBlock = styled.div`
   width: 38%;
-  padding-bottom: 80px;
   text-align: right;
 `
 
-const Paragraph = styled.p`
-  display: inline;
+const Paragraph = styled.h1`
   font-weight: 700;
-  font-size: 30px;
-  line-height: 50px;
-  background-color: #c0c0c0;
+  font-size: 72px;
+  line-height: 1;
 `
 
 const Text = styled.span`
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  background-color: #c0c0c0;
+  //background-color: #c0c0c0;
 `
 
-const Main = () => (
-  <MainSec>
+const HeroSection = () => (
+  <Hero>
+    <Header />
     <Cont>
       <Timer>
         <CountdownTimer />
       </Timer>
       <Wrapper>
         <LeftTextBlock>
-          <Paragraph>
-            Lorem ipsum dolor sit amet consectetur, adipisicing
-          </Paragraph>
+          <Paragraph>Тайный Санта</Paragraph>
         </LeftTextBlock>
         <RightTextBlock>
           <Text>
@@ -69,8 +70,10 @@ const Main = () => (
           </Text>
         </RightTextBlock>
       </Wrapper>
+      <HeroSectionBtn />
+      <SnowFall />
     </Cont>
-  </MainSec>
+  </Hero>
 )
 
-export default Main
+export default HeroSection

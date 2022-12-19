@@ -35,6 +35,11 @@ const CircularProgressStyle = styled(CircularProgress)`
   color: red;
 `
 
+const TimerTitle = styled(Typography)`
+  margin: 0 0 30px 0;
+  font-size: 24px;
+`
+
 const CountdownTimer = () => {
   const [days, setDays] = useState(0)
   const [hours, setHours] = useState(0)
@@ -65,52 +70,55 @@ const CountdownTimer = () => {
   }, [])
 
   return (
-    <TimerWrapper>
-      <BoxWrapper>
-        <CircularProgressStyle
-          value={(days * 100) / (31 - 1)}
-          variant="determinate"
-          size={100}
-        />
-        <BoxInner>
-          <TimerItem>{days}</TimerItem>
-          <span>Дней</span>
-        </BoxInner>
-      </BoxWrapper>
-      <BoxWrapper>
-        <CircularProgressStyle
-          value={(hours * 100) / (24 - 1)}
-          variant="determinate"
-          size={100}
-        />
-        <BoxInner>
-          <TimerItem>{hours}</TimerItem>
-          <span>Часов</span>
-        </BoxInner>
-      </BoxWrapper>
-      <BoxWrapper>
-        <CircularProgressStyle
-          value={(minutes * 100) / (60 - 1)}
-          variant="determinate"
-          size={100}
-        />
-        <BoxInner>
-          <TimerItem>{minutes}</TimerItem>
-          <span>Минут</span>
-        </BoxInner>
-      </BoxWrapper>
-      <BoxWrapper>
-        <CircularProgressStyle
-          value={(seconds * 100) / (60 - 1)}
-          variant="determinate"
-          size={100}
-        />
-        <BoxInner>
-          <TimerItem>{seconds}</TimerItem>
-          <span>Секунд</span>
-        </BoxInner>
-      </BoxWrapper>
-    </TimerWrapper>
+    <Box>
+      <TimerTitle>До нового года осталось:</TimerTitle>
+      <TimerWrapper>
+        <BoxWrapper>
+          <CircularProgressStyle
+            value={(days * 100) / (31 - 1)}
+            variant="determinate"
+            size={100}
+          />
+          <BoxInner>
+            <TimerItem>{days}</TimerItem>
+            <span>Дней</span>
+          </BoxInner>
+        </BoxWrapper>
+        <BoxWrapper>
+          <CircularProgressStyle
+            value={(hours * 100) / (24 - 1)}
+            variant="determinate"
+            size={100}
+          />
+          <BoxInner>
+            <TimerItem>{hours}</TimerItem>
+            <span>Часов</span>
+          </BoxInner>
+        </BoxWrapper>
+        <BoxWrapper>
+          <CircularProgressStyle
+            value={(minutes * 100) / (60 - 1)}
+            variant="determinate"
+            size={100}
+          />
+          <BoxInner>
+            <TimerItem>{minutes}</TimerItem>
+            <span>Минут</span>
+          </BoxInner>
+        </BoxWrapper>
+        <BoxWrapper>
+          <CircularProgressStyle
+            value={(seconds * 100) / (60 - 1)}
+            variant="determinate"
+            size={100}
+          />
+          <BoxInner>
+            <TimerItem>{seconds}</TimerItem>
+            <span>Секунд</span>
+          </BoxInner>
+        </BoxWrapper>
+      </TimerWrapper>
+    </Box>
   )
 }
 

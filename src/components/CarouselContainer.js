@@ -102,6 +102,7 @@ const CarouselContainer = (prop) => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (!paused) {
+
         updateIndex(activeIndex + 1);
       }
     }, 3000);

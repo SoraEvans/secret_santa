@@ -22,7 +22,7 @@ const Logo = styled.a.attrs({
   padding: 5px;
 `
 
-const Menu = styled.div`
+const SignUp = styled.div`
   color: black;
   background-color: #c0c0c0;
   padding: 5px;
@@ -35,7 +35,9 @@ const Header = () => (
         <Logo>
           <span style={{ color: '#FF5539' }}>Logo</span>
         </Logo>
-        <Menu>Меню</Menu>
+        <SignUp>
+          <Link to="/register">Вход и регистрация</Link>
+        </SignUp>
       </Wrapper>
     </Cont>
   </HeaderEl>

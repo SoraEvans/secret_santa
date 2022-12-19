@@ -11,7 +11,7 @@ const Hero = styled.section`
   position: relative;
   overflow: hidden;
   padding: 0 0 60px 0;
-  height: 90vh;
+  min-height: 90vh;
 `
 
 const Wrapper = styled.div`
@@ -53,6 +53,7 @@ const Text = styled.span`
 
 const HeroSection = () => (
   <Hero>
+    <SnowFall />
     <Header />
     <Cont>
       <Timer>
@@ -71,7 +72,6 @@ const HeroSection = () => (
         </RightTextBlock>
       </Wrapper>
       <HeroSectionBtn />
-      <SnowFall />
     </Cont>
   </Hero>
 )

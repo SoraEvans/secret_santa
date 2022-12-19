@@ -8,7 +8,6 @@ const SantaBoxBtn = styled.div`
 `
 
 const SantaBtn = styled.button`
-  position: relative;
   background-color: #ff5539;
   border: none;
   width: 150px;

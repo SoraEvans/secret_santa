@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Button } from '@mui/material'
-import { AuthForm, Input } from './auth-styles'
+import { AuthForm, Input, Div, Label } from './auth-styles'
 
 // const onSubmit = (form) => {
 
@@ -21,13 +21,16 @@ const PasswordResetPage = () => {
   return (
     <AuthForm>
       <h1>Восстановление доступа</h1>
-      <Input
-        placeholder="Почта"
-        type="email"
-        value={form.email}
-        data-name="email"
-        onChange={handleChangeForm}
-      />
+      <Div>
+        <Input
+          id="email"
+          type="email"
+          value={form.email}
+          data-name="email"
+          onChange={handleChangeForm}
+        />
+        <Label for="email">Почта</Label>
+      </Div>
       <Button
         variant="outlined"
         // onClick={() => {

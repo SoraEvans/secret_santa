@@ -1,10 +1,25 @@
 import React, { useState } from 'react'
-import { Link, Button } from '@mui/material'
-import { AuthForm, Input } from './auth-styles'
+import { Link } from 'react-router-dom'
+import { Button } from '@mui/material'
+import { AuthForm, Input, Div, Label, Title } from './auth-styles'
 
-// const onSubmit = (form) => {
-//     {"*TODO*"}
-// }
+const onSubmit = async form => {
+  await fetch('http://testingsanta/api/user', {
+    method: 'POST',
+    header: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: JSON.stringify({
+      name: form.name,
+      email: form.email,
+      password: form.password
+    })
+  })
+    .then(response => response.text())
+    .then(response => {
+      console.log(response)
+    })
+}
 
 const RegisterPage = () => {
   const [form, setForm] = useState({ name: '', email: '', password: '' })
@@ -21,41 +36,53 @@ const RegisterPage = () => {
   return (
     <AuthForm>
       <h1>Регистрация</h1>
-      <p>
+      <Title>
         Уже зарегистрированы?
-        <Link href="/login" underline="always">
+        <Link to="/login" underline="always">
           Войти на сайт
         </Link>
-      </p>
-      <Input
-        placeholder="Имя"
-        value={form.name}
-        data-name="name"
-        onChange={handleChangeForm}
-      />
-      <Input
-        placeholder="Почта"
-        type="email"
-        value={form.email}
-        data-name="email"
-        onChange={handleChangeForm}
-      />
-      <Input
-        placeholder="Пароль"
-        type="password"
-        value={form.password}
-        data-name="password"
-        onChange={handleChangeForm}
-      />
+      </Title>
+      <Div>
+        <Input
+          id="name"
+          value={form.name}
+          data-name="name"
+          onChange={handleChangeForm}
+        />
+        <Label for="name">Имя</Label>
+      </Div>
+      <Div>
+        <Input
+          id="email"
+          type="email"
+          value={form.email}
+          data-name="email"
+          onChange={handleChangeForm}
+        />
+        <Label for="email">Почта</Label>
+      </Div>
+      <Div>
+        <Input
+          id="password"
+          type="password"
+          value={form.password}
+          data-name="password"
+          onChange={handleChangeForm}
+        />
+        <Label for="password">Пароль</Label>
+      </Div>
       <Button
-        bg="#FD9797;"
         variant="outlined"
-        // onClick={() => {
-        //   onSubmit(form)
-        // }}
+        onClick={() => {
+          onSubmit(form)
+        }}
       >
         Зарегистрироваться
       </Button>
+      <p>
+        Регистрируясь, вы даете согласие на
+        <Link to="/www">обработку персональных данных.</Link>
+      </p>
     </AuthForm>
   )
 }

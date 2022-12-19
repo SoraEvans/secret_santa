@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Link, Button } from '@mui/material'
-import { AuthForm, Input } from './auth-styles'
+import { Link } from 'react-router-dom'
+import { Button } from '@mui/material'
+import { AuthForm, Input, Div, Label, LabelLink, Title } from './auth-styles'
 
-// const onSubmit = (form) => {
-//
+// const onSubmit = async (form) => {
+// await
 // }
 
 const LoginPage = () => {
@@ -20,26 +21,35 @@ const LoginPage = () => {
   return (
     <AuthForm>
       <h1>Войти на сайт</h1>
-      <p>
+      <Title>
         Ещё не зарегистрированы?
-        <Link href="/register" underline="always">
+        <Link to="/register" underline="always">
           Зарегистрироваться
         </Link>
-      </p>
-      <Input
-        placeholder="Почта"
-        type="email"
-        value={form.email}
-        data-name="email"
-        onChange={handleChangeForm}
-      />
-      <Input
-        placeholder="Пароль"
-        type="password"
-        value={form.password}
-        data-name="password"
-        onChange={handleChangeForm}
-      />
+      </Title>
+      <Div>
+        <Input
+          id="email"
+          type="email"
+          value={form.email}
+          data-name="email"
+          onChange={handleChangeForm}
+        />
+        <Label for="email">Почта</Label>
+      </Div>
+      <Div>
+        <Input
+          id="password"
+          type="password"
+          value={form.password}
+          data-name="password"
+          onChange={handleChangeForm}
+        />
+        <Label for="password">Пароль</Label>
+        <LabelLink for="password">
+          <Link to="/password-reset">Забыли пароль?</Link>
+        </LabelLink>
+      </Div>
       <Button
         variant="outlined"
         // onClick={() => {
@@ -48,6 +58,10 @@ const LoginPage = () => {
       >
         Войти
       </Button>
+      <p>
+        Входя на сайт, вы даете согласие на
+        <Link to="/www">обработку персональных данных.</Link>
+      </p>
     </AuthForm>
   )
 }

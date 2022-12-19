@@ -116,9 +116,9 @@ const CarouselContainer = prop => {
 
   return (
     <CarouselSection>
-      <CarouselButton>
-        <Link to="/register">Создать коробку</Link>
-      </CarouselButton>
+      <Link to="/register" style={{ textDecoration: 'none' }}>
+        <CarouselButton>Создать коробку</CarouselButton>
+      </Link>
       <CarouselHeader>Новогодние традиции в разных странах</CarouselHeader>
       <CarouselWrapper>
         <CarouselArrows

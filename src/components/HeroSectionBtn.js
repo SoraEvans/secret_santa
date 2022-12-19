@@ -26,11 +26,11 @@ const SantaBtn = styled.button`
 `
 
 const HeroSectionBtn = () => (
-  <SantaBoxBtn>
-    <SantaBtn>
-      <Link to="/register">Стать Сантой</Link>
-    </SantaBtn>
-  </SantaBoxBtn>
+  <Link to="/register" style={{ textDecoration: 'none' }}>
+    <SantaBoxBtn>
+      <SantaBtn>Стать Сантой</SantaBtn>
+    </SantaBoxBtn>
+  </Link>
 )
 
 export default HeroSectionBtn

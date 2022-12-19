@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const SantaBoxBtn = styled.div`
@@ -27,7 +28,9 @@ const SantaBtn = styled.button`
 
 const HeroSectionBtn = () => (
   <SantaBoxBtn>
-    <SantaBtn>Стать Сантой</SantaBtn>
+    <SantaBtn>
+      <Link to="/register">Стать Сантой</Link>
+    </SantaBtn>
   </SantaBoxBtn>
 )
 

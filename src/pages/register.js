@@ -37,7 +37,7 @@ const RegisterPage = () => {
     <AuthForm>
       <h1>Регистрация</h1>
       <Title>
-        Уже зарегистрированы?
+        Уже зарегистрированы?&nbsp;
         <Link to="/login" underline="always">
           Войти на сайт
         </Link>
@@ -80,7 +80,7 @@ const RegisterPage = () => {
         Зарегистрироваться
       </Button>
       <p>
-        Регистрируясь, вы даете согласие на
+        Регистрируясь, вы даете согласие на&nbsp;
         <Link to="/www">обработку персональных данных.</Link>
       </p>
     </AuthForm>

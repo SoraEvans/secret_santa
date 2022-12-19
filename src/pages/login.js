@@ -22,7 +22,7 @@ const LoginPage = () => {
     <AuthForm>
       <h1>Войти на сайт</h1>
       <Title>
-        Ещё не зарегистрированы?
+        Ещё не зарегистрированы?&nbsp;
         <Link to="/register" underline="always">
           Зарегистрироваться
         </Link>
@@ -59,7 +59,7 @@ const LoginPage = () => {
         Войти
       </Button>
       <p>
-        Входя на сайт, вы даете согласие на
+        Входя на сайт, вы даете согласие на&nbsp;
         <Link to="/www">обработку персональных данных.</Link>
       </p>
     </AuthForm>

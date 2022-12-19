@@ -1,45 +1,49 @@
-import React from "react";
-import styled from "styled-components";
-import Cont from "./style_cont";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
+import Cont from './style_cont'
 
 const HeaderEl = styled.header`
-background: #FEEAEA;
-background-image: url(/img/pngwing1.png);
-background-size: 30%;
-`;
+  background: #feeaea;
+  background-image: url(/img/pngwing1.png);
+  background-size: 30%;
+`
 
 const Wrapper = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 2rem 0;
-`;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+`
 
 const Logo = styled.a.attrs({
-    href: '/',
+  href: '/'
 })`
-color: black;
-text-decoration: none;
-background-color: #C0C0C0;
-padding: 5px;
-`;
+  color: black;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  padding: 5px;
+`
 
-const Menu = styled.div`
-color: black;
-background-color: #C0C0C0;
-padding: 5px;
-`;
+const SignUp = styled.div`
+  color: black;
+  background-color: #c0c0c0;
+  padding: 5px;
+`
 
 const Header = () => (
-
-    <HeaderEl>
-        <Cont>
-            <Wrapper>
-                <Logo><span style={{ color: '#FF5539' }}>Logo</span></Logo>
-                <Menu>Меню</Menu>
-            </Wrapper>
-        </Cont>
-    </HeaderEl >
+  <HeaderEl>
+    <Cont>
+      <Wrapper>
+        <Logo>
+          <span style={{ color: '#FF5539' }}>Logo</span>
+        </Logo>
+        <SignUp>
+          <Link to="/register">Вход и регистрация</Link>
+        </SignUp>
+      </Wrapper>
+    </Cont>
+  </HeaderEl>
 )
 
-export default Header;
+export default Header

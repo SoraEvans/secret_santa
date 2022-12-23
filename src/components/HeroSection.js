@@ -12,6 +12,7 @@ const Hero = styled.section`
   overflow: hidden;
   padding: 0 0 60px 0;
   min-height: 90vh;
+  padding-top:165px
 `
 
 const Wrapper = styled.div`

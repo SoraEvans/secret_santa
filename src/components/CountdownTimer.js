@@ -38,6 +38,10 @@ const CircularProgressStyle = styled(CircularProgress)`
 const TimerTitle = styled(Typography)`
   margin: 0 0 30px 0;
   font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
 `
 
 const CountdownTimer = () => {

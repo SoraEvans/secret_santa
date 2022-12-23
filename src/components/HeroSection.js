@@ -17,7 +17,7 @@ const Hero = styled.section`
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem 0;
   margin: 0 0 20px 0;
@@ -37,19 +37,22 @@ const LeftTextBlock = styled.div`
 const RightTextBlock = styled.div`
   width: 38%;
   text-align: right;
+  width: 311px;
+  height: 135px;
 `
 
 const Paragraph = styled.h1`
   font-weight: 700;
   font-size: 72px;
   line-height: 1;
+
 `
 
 const Text = styled.span`
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 35px;
-  //background-color: #c0c0c0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 142.02%;
+  white-space: nowrap;
 `
 
 const HeroSection = () => (
@@ -66,9 +69,9 @@ const HeroSection = () => (
         </LeftTextBlock>
         <RightTextBlock>
           <Text>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error,
-            atque, culpa laborum fugiat consequuntur voluptatum voluptas ipsa
-            aperiam eveniet
+            Создай новогоднее <br/>
+            настроение себе <br/>
+            и друзьям
           </Text>
         </RightTextBlock>
       </Wrapper>

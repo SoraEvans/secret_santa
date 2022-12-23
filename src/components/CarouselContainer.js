@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 
 const CarouselSection = styled.section`
   width: 100%;
-  max-width: 1470px;
+  max-width: 1270px;
   margin: 65px auto 88px auto;
   padding: 0 1rem;
 `

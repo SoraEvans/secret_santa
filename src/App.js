@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Link, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import RegisterPage from './pages/register'
 import LoginPage from './pages/login'
@@ -9,43 +9,7 @@ import Home from './pages/home'
 function App() {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Главная</Link>
-          </li>
-          <li>
-            <Link to="/register">Регистрация</Link>
-          </li>
-          <li>
-            <Link to="/login">Авторизация</Link>
-          </li>
-          <li>
-            <Link to="/password-reset">Восстановление пароля</Link>
-          </li>
-          <li>
-            <Link to="/create-box">Создание коробки</Link>
-          </li>
-          <li>
-            <Link to="/box-created">Коробка создана</Link>
-          </li>
-          <li>
-            <Link to="/box">Коробка</Link>
-          </li>
-          <li>
-            <Link to="/whose-santa">Кто чей Санта?</Link>
-          </li>
-          <li>
-            <Link to="/box/settings">Настройки коробки</Link>
-          </li>
-          <li>
-            <Link to="/profile">Профиль</Link>
-          </li>
-          <li>
-            <Link to="/boxes">Коробки</Link>
-          </li>
-        </ul>
-      </nav>
+      <nav />
 
       <Routes>
         <Route path="/" element={<Home />} />

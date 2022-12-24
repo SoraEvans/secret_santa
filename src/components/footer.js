@@ -9,25 +9,34 @@ background: #D2D2D2;
 
 const Wrapper = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 padding: 2rem 0;
 `;
 
 const FooterText = styled.p`
-width: 25%;
 text-align: center;
-background: #C0C0C0;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+cursor: pointer;
 `;
 
+const CopyrightText = styled.p`
+text-align: center;
+color: #818181;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+`
 
 const Footer = () => (
     <FooterEl>
         <Cont>
             <Wrapper>
-                <FooterText>Lorem ipsum dolor sit amet consectetur</FooterText>
-                <FooterText>Lorem ipsum dolor sit amet consectetur</FooterText>
-                <FooterText>Lorem ipsum dolor sit amet consectetur</FooterText>
+                <FooterText>Помочь проекту</FooterText>
+                <FooterText>Обратная связь</FooterText>
+                <CopyrightText>©Copyright 2022</CopyrightText>
             </Wrapper>
         </Cont>
     </FooterEl>

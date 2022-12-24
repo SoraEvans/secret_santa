@@ -1,4 +1,3 @@
-import { Switch, styled } from '@mui/material'
 import React, { useState } from 'react'
 import {
   Head,
@@ -19,51 +18,9 @@ import {
   ButtonsDiv,
   Select,
   CostDiv,
-  CostInput
-} from './box-styles'
-
-const AntSwitch = styled(Switch)(({ theme }) => ({
-  width: 79,
-  height: 36,
-  padding: 0,
-  display: 'flex',
-  '&:active': {
-    '& .MuiSwitch-thumb': {
-      width: 25
-    },
-    '& .MuiSwitch-switchBase.Mui-checked': {
-      transform: 'translateX(9px)'
-    }
-  },
-  '& .MuiSwitch-switchBase': {
-    padding: 3,
-    '&.Mui-checked': {
-      transform: 'translateX(43px)',
-      color: '#FD9797',
-      '& + .MuiSwitch-track': {
-        opacity: 1,
-        backgroundColor: '#FFBFBF'
-      }
-    }
-  },
-  '& .MuiSwitch-thumb': {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
-    transition: theme.transitions.create(['width'], {
-      duration: 200
-    })
-  },
-  '& .MuiSwitch-track': {
-    borderRadius: 38 / 2,
-    opacity: 1,
-    backgroundColor:
-      theme.palette.mode === 'dark'
-        ? 'rgba(255,255,255,.35)'
-        : 'rgba(0,0,0,.25)',
-    boxSizing: 'border-box'
-  }
-}))
+  CostInput,
+  AntSwitch
+} from './style'
 
 const BoxCreate = () => {
   const [state, setState] = useState({
@@ -78,7 +35,7 @@ const BoxCreate = () => {
     cost: '',
     currency: 'RUB'
   })
-  console.log(state)
+
   const handleChangeForm = event => {
     const field = event.target.getAttribute('data-name')
     setState({

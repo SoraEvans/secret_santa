@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button, Container, SubTitle, Title } from './box-done-styles'
+import { Button, ContainerBoxCreated, SubTitle, TitleBoxCreated } from './style'
 
 function BoxDone() {
   return (
-    <Container>
+    <ContainerBoxCreated>
       <div>
-        <Title>Коробка создана!</Title>
+        <TitleBoxCreated>Коробка создана!</TitleBoxCreated>
         <SubTitle style={{ marginBottom: '125px' }}>Какой-то текст</SubTitle>
         <Link to="/box" style={{ textDecoration: 'none' }}>
           <Button type="button">Заглянуть в коробку</Button>
         </Link>
       </div>
       <img src="img/Group.png" alt="alt" />
-    </Container>
+    </ContainerBoxCreated>
   )
 }
 

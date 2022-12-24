@@ -16,16 +16,17 @@ const AccordionSection = styled.section`
 `
 //
 const Container = styled.div`
-  max-width: 1470px;
+  max-width: 1270px;
   width: 100%;
   height: 100%;
-  padding: 0 1rem;
+  padding: 0 15px;
   margin-inline: auto;
 `
 //
 const Title = styled.h2`
-  font-size: 24px;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
   margin: 0 0 40px 0;
 `
 
@@ -78,7 +79,7 @@ const AccordionFaq = () => {
   return (
     <AccordionSection>
       <Container>
-        <Title>Часто задаваемые вопросы</Title>
+        <Title>Вопросы о сервисе</Title>
         <AccordionWrapper>
           <Accordion
             expanded={expanded === 'panel1'}

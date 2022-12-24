@@ -10,6 +10,7 @@ export const AuthForm = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1240px;
+  margin: 0 auto;
 `
 export const Title = styled.p`
   margin-bottom: 20px;

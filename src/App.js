@@ -6,7 +6,7 @@ import LoginPage from './pages/auth/login'
 import PasswordResetPage from './pages/auth/password-reset'
 import Home from './pages/home/home'
 import BoxCreate from './pages/box-create/box-create'
-import BoxDone from './components/box-create/box-done'
+import BoxDone from './pages/box-create/box-done'
 
 function App() {
   return (

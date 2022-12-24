@@ -20,7 +20,7 @@ import {
   CostDiv,
   CostInput,
   AntSwitch
-} from './box-styles'
+} from './style'
 
 const BoxCreate = () => {
   const [state, setState] = useState({

@@ -165,8 +165,24 @@ export const CostInput = styled.input`
   color: #000000;
 `
 
+export const Img = styled.img`
+  width: 368px;
+  height: 368px;
+`
 
-export const AntSwitch = styled(Switch)(({ theme }) => ({
+export const Button = styled.button`
+  width: 291px;
+  height: 81px;
+  background: #fd9797;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+`
+
+export const AntSwitch = styled(Switch)(() => ({
   width: 79,
   height: 36,
   padding: 0,
@@ -194,17 +210,26 @@ export const AntSwitch = styled(Switch)(({ theme }) => ({
     width: 30,
     height: 30,
     borderRadius: 15,
-    transition: theme.transitions.create(['width'], {
-      duration: 200
-    })
   },
   '& .MuiSwitch-track': {
     borderRadius: 38 / 2,
     opacity: 1,
-    backgroundColor:
-      theme.palette.mode === 'dark'
-        ? 'rgba(255,255,255,.35)'
-        : 'rgba(0,0,0,.25)',
     boxSizing: 'border-box'
   }
 }))
+
+export const ContainerBoxCreated = styled.div`
+  display: flex;
+  max-width: 750px;
+  justify-content: space-around;
+  margin: 0 auto;
+`
+
+export const TitleBoxCreated = styled.h1`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  color: #000000;
+`

@@ -1,14 +1,14 @@
 import React from 'react'
+import { CopyrightText, FooterEl, FooterText, Wrapper } from './style'
 import Container from '../style_cont'
-import { FooterEl, FooterText, Wrapper } from './style'
 
 const Footer = () => (
   <FooterEl>
     <Container>
       <Wrapper>
-        <FooterText>Lorem ipsum dolor sit amet consectetur</FooterText>
-        <FooterText>Lorem ipsum dolor sit amet consectetur</FooterText>
-        <FooterText>Lorem ipsum dolor sit amet consectetur</FooterText>
+        <FooterText>Помочь проекту</FooterText>
+        <FooterText>Обратная связь</FooterText>
+        <CopyrightText>©Copyright 2022</CopyrightText>
       </Wrapper>
     </Container>
   </FooterEl>

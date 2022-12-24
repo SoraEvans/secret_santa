@@ -5,6 +5,7 @@ import RegisterPage from './pages/register'
 import LoginPage from './pages/login'
 import PasswordResetPage from './pages/password-reset'
 import Home from './pages/home'
+import BoxDone from './components/box-create/box-done'
 import BoxCreate from './components/box-create/box-create'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/password-reset" element={<PasswordResetPage />} />
         <Route path="/create-box" element={<BoxCreate />} />
-        <Route path="/box-created" element={<h1>Коробка создана</h1>} />
+        <Route path="/box-created" element={<BoxDone />} />
 
         <Route path="/box">
           <Route index element={<h1>Коробка</h1>} />

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import RegisterPage from './pages/register'
-import LoginPage from './pages/login'
-import PasswordResetPage from './pages/password-reset'
-import Home from './pages/home'
-import BoxCreate from './components/box-create/box-create'
+import RegisterPage from './pages/auth/register'
+import LoginPage from './pages/auth/login'
+import PasswordResetPage from './pages/auth/password-reset'
+import Home from './pages/home/home'
+import BoxCreate from './pages/box-create/box-create'
 
 function App() {
   return (

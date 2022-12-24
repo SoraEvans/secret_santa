@@ -29,6 +29,7 @@ const LoginPage = () => {
       </Title>
       <Div>
         <Input
+          required
           id="email"
           type="email"
           value={form.email}
@@ -39,6 +40,7 @@ const LoginPage = () => {
       </Div>
       <Div>
         <Input
+          required
           id="password"
           type="password"
           value={form.password}

@@ -44,6 +44,7 @@ const RegisterPage = () => {
       </Title>
       <Div>
         <Input
+          required
           id="name"
           value={form.name}
           data-name="name"
@@ -53,6 +54,7 @@ const RegisterPage = () => {
       </Div>
       <Div>
         <Input
+          required
           id="email"
           type="email"
           value={form.email}
@@ -63,6 +65,7 @@ const RegisterPage = () => {
       </Div>
       <Div>
         <Input
+          required
           id="password"
           type="password"
           value={form.password}

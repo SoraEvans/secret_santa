@@ -23,6 +23,7 @@ const PasswordResetPage = () => {
       <h1>Восстановление доступа</h1>
       <Div>
         <Input
+          required
           id="email"
           type="email"
           value={form.email}

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Switch } from "@mui/material";
+import { Switch, styled as st } from '@mui/material'
 
 export const Container = styled.div`
   display: flex;
@@ -182,7 +182,7 @@ export const Button = styled.button`
   color: #000000;
 `
 
-export const AntSwitch = styled(Switch)(() => ({
+export const AntSwitch = st(Switch)(() => ({
   width: 79,
   height: 36,
   padding: 0,
@@ -209,7 +209,7 @@ export const AntSwitch = styled(Switch)(() => ({
   '& .MuiSwitch-thumb': {
     width: 30,
     height: 30,
-    borderRadius: 15,
+    borderRadius: 15
   },
   '& .MuiSwitch-track': {
     borderRadius: 38 / 2,

@@ -1,4 +1,3 @@
-import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 const snowfall = keyframes`
@@ -8,7 +7,6 @@ const snowfall = keyframes`
   to{
     transform: translateY(650px);
   }
-
 `
 
 const Snow = styled.div`
@@ -41,7 +39,6 @@ const Snow = styled.div`
     margin-left: -250px;
     opacity: 0.8;
     filter: blur(2px);
-    //animation-direction: reverse;
     animation-duration: 6s;
   }
 
@@ -53,10 +50,4 @@ const Snow = styled.div`
   }
 `
 
-const SnowFall = () => (
-  <div>
-    <Snow />
-  </div>
-)
-
-export default SnowFall
+export default Snow

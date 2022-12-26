@@ -1,10 +1,12 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import RegisterPage from './pages/register'
-import LoginPage from './pages/login'
-import PasswordResetPage from './pages/password-reset'
-import Home from './pages/home'
+import RegisterPage from './pages/auth/register'
+import LoginPage from './pages/auth/login'
+import PasswordResetPage from './pages/auth/password-reset'
+import Home from './pages/home/home'
+import BoxCreate from './pages/box-create/box-create'
+import BoxDone from './pages/box-create/box-done'
 import MyBoxes from './pages/my-boxes/MyBoxes'
 
 function App() {
@@ -17,8 +19,8 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/password-reset" element={<PasswordResetPage />} />
-        <Route path="/create-box" element={<h1>Создание коробки</h1>} />
-        <Route path="/box-created" element={<h1>Коробка создана</h1>} />
+        <Route path="/create-box" element={<BoxCreate />} />
+        <Route path="/box-created" element={<BoxDone />} />
 
         <Route path="/box">
           <Route index element={<h1>Коробка</h1>} />

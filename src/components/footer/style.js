@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2rem 0;
+  height: 107px;
 `;
 
 export const FooterText = styled.p`

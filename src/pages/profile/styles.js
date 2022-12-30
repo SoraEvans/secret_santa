@@ -2,7 +2,12 @@ import styled from 'styled-components'
 import { styled as st } from "@mui/material/styles";
 import { Switch } from "@mui/material";
 
-
+export const PageBackground = styled.div`
+padding-bottom: 80px;
+   background-image: url("img/Snowflake-Background-PNG.svg");
+   background-position: bottom -250px right 0;
+   background-repeat: no-repeat; 
+`
 export const ProfileTop = styled.div`
   display: flex;
   flex-direction: row;
@@ -129,7 +134,7 @@ export const ProfileButton = styled.button `
   color: white;
   font-weight: 400;
   font-size: 20px;
-  margin: 0 auto 82px auto;
+  margin: 0 auto;
   height: 81px;
   width: 291px;
   background-color: #fd9797;

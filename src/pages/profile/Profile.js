@@ -7,6 +7,7 @@ import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import Container from '../../components/style_cont'
 import {
+  PageBackground,
   Button,
   Input,
   InputBlock,
@@ -37,7 +38,8 @@ function Profile() {
 
       <Header />
 
-      <Container>
+      <PageBackground>
+        <Container>
         <ProfileTop>
           <h2>Профиль</h2>
           <Button type='button'>Кнопка</Button>
@@ -199,7 +201,7 @@ function Profile() {
         <ProfileButton type="submit">Сохранить</ProfileButton>
 
 
-      </Container>
+      </Container></PageBackground>
 
       <Footer />
     </>

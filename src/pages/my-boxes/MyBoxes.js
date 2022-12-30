@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { TabBox, TabItem, BoxWrapper, BoxItem } from './style'
-import Header from '../../components/header'
-import Footer from '../../components/footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 import PrivateBox from '../../components/PrivateBox/PrivateBox'
 import Cont from '../../components/style_cont'
-import GlStyles from '../../components/style_global'
 import PublicBox from '../../components/PublicBox/PublicBox'
 
 const MyBoxes = () => {
@@ -15,7 +14,6 @@ const MyBoxes = () => {
 
   return (
     <>
-      <GlStyles />
       <Header />
 
       <Cont>

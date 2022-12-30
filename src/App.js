@@ -8,6 +8,7 @@ import Home from './pages/home/home'
 import BoxCreate from './pages/box-create/box-create'
 import BoxDone from './pages/box-create/box-done'
 import MyBoxes from './pages/my-boxes/MyBoxes'
+import Profile from './pages/profile/Profile'
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
         </Route>
 
         <Route path="/whose-santa" element={<h1>Кто чей Санта?</h1>} />
-        <Route path="/profile" element={<h1>Профиль</h1>} />
+        <Route path="/profile" element={<Profile />} />
 
         <Route path="/boxes" element={<MyBoxes />}>
           <Route index element={<h1>Коробки</h1>} />

@@ -2,14 +2,11 @@ import React from 'react'
 import Container from '../style_cont'
 import { AuthorisedWrapper, BoxesAndProfileLink, HeaderEl, Logo, NotificationsLink, SignUpLink, Wrapper } from './style'
 
-function getToken() {
-
-}
 
 function Header() {
-  const token = getToken();
+  const isLogged = localStorage.getItem('isLoggedIn');
 
-  if (!token) {
+  if (isLogged === "true") {
     return (
       <HeaderEl>
         <Container>
@@ -17,9 +14,17 @@ function Header() {
             <Logo>
               <img alt="logo" src="img/logo.svg" />
             </Logo>
-            <SignUpLink to="/register">
-              Вход и регистрация
-            </SignUpLink>
+            <AuthorisedWrapper>
+              <BoxesAndProfileLink to="/boxes">
+                Коробки
+              </BoxesAndProfileLink>
+              <NotificationsLink to="#">
+                Уведомления
+              </NotificationsLink>
+              <BoxesAndProfileLink to="/profile">
+                Профиль
+              </BoxesAndProfileLink>
+            </AuthorisedWrapper>
           </Wrapper>
         </Container>
       </HeaderEl>
@@ -33,22 +38,13 @@ function Header() {
           <Logo>
             <img alt="logo" src="img/logo.svg" />
           </Logo>
-          <AuthorisedWrapper>
-            <BoxesAndProfileLink to="/boxes">
-              Коробки
-            </BoxesAndProfileLink>
-            <NotificationsLink to="#">
-              Уведомления
-            </NotificationsLink>
-            <BoxesAndProfileLink to="/profile">
-              Профиль
-            </BoxesAndProfileLink>
-          </AuthorisedWrapper>
+          <SignUpLink to="/register">
+            Вход и регистрация
+          </SignUpLink>
         </Wrapper>
       </Container>
     </HeaderEl>
   )
 }
-
 
 export default Header

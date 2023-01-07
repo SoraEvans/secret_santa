@@ -1,18 +1,28 @@
 import React from 'react'
+import Grid from '@mui/material/Unstable_Grid2'
 import Container from '../style_cont'
 import {
   InstrHeader,
   InstrIllustr,
   InstrList,
   InstrNum,
-  InstrNums,
   InstrSec,
-  InstrText,
   InstrTextLine,
   Wrapper
 } from './style'
+import Santa from '../../assets/images/santa.svg'
+import oneIcon from '../../assets/images/ONE.svg'
+import twoIcon from '../../assets/images/TWO.svg'
+import threeIcon from '../../assets/images/THREE.svg'
 
-const arr = [1, 2, 3]
+const arr = [
+  { text: "Создайте коробку для жеребьевки, настройте её по желанию и пригласите своих друзей.", icon: oneIcon },
+  { text: "Когда все участники будут в сборе, проведите тайную жеребьевку, чтобы распределить Сант.", icon: twoIcon },
+  {
+    text: "Составьте список желаний для своего Санты, ознакомьтесь с пожеланиями своего Подопечного и отправляйте подарки!",
+    icon: threeIcon
+  },
+]
 
 const Instructions = () => (
   <InstrSec>
@@ -20,20 +30,21 @@ const Instructions = () => (
       <InstrHeader>Инструкция по применению</InstrHeader>
       <Wrapper>
         <InstrList>
-          <InstrNums>
-            {arr.map(item => <InstrNum>{item}</InstrNum>)}
-          </InstrNums>
-          <InstrText>
-            {arr.map(() => (
-              <InstrTextLine>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, atque, culpa laborum
-                fugiat consequuntur voluptatum voluptas ipsa aperiam eveniet
-              </InstrTextLine>
+          <Grid container rowSpacing={1}>
+            {arr.map(item => (
+              <Grid style={{ display: 'flex', alignItems: 'center' }}>
+                <InstrNum>
+                  <img src={item.icon} alt='' />
+                </InstrNum>
+                <InstrTextLine>
+                  {item.text}
+                </InstrTextLine>
+              </Grid>
             ))}
-          </InstrText>
+          </Grid>
         </InstrList>
         <InstrIllustr>
-          <img src="img/instrblockpic.png" alt='' />
+          <img src={Santa} alt='' />
         </InstrIllustr>
       </Wrapper>
     </Container>

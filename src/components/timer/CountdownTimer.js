@@ -4,7 +4,7 @@ import moment from 'moment'
 import { BoxInner, BoxWrapper, CircularProgressStyle, TimerItem, TimerTitle, TimerWrapper } from './style'
 
 const interval = 1000
-const eventTime = moment("2022-12-31T23:59:59").format('x')
+const eventTime = moment("2023-12-31T23:59:59").format('x')
 
 const CountdownTimer = () => {
   const [duration, setDuration] = useState(moment())
@@ -23,7 +23,7 @@ const CountdownTimer = () => {
           <CircularProgressStyle
             value={(duration.days() * 100) / (31)}
             variant="determinate"
-            size={100}
+            size={158}
           />
           <BoxInner>
             <TimerItem>{duration.days()}</TimerItem>
@@ -34,7 +34,7 @@ const CountdownTimer = () => {
           <CircularProgressStyle
             value={(duration.hours() * 100) / (24)}
             variant="determinate"
-            size={100}
+            size={158}
           />
           <BoxInner>
             <TimerItem>{duration.hours()}</TimerItem>
@@ -45,7 +45,7 @@ const CountdownTimer = () => {
           <CircularProgressStyle
             value={(duration.minutes() * 100) / (60)}
             variant="determinate"
-            size={100}
+            size={158}
           />
           <BoxInner>
             <TimerItem>{duration.minutes()}</TimerItem>
@@ -56,7 +56,7 @@ const CountdownTimer = () => {
           <CircularProgressStyle
             value={(duration.seconds() * 100) / (60)}
             variant="determinate"
-            size={100}
+            size={158}
           />
           <BoxInner>
             <TimerItem>{duration.seconds()}</TimerItem>

@@ -1,19 +1,19 @@
 import styled from 'styled-components'
 
 export const Hero = styled.section`
-  background: #c4c5f6;
+  background: linear-gradient(0deg, #FFF 55%, #FF5539 100%);
   position: relative;
   overflow: hidden;
-  padding: 165px 0 60px 0;
-  min-height: 90vh;
+  padding: 125px 0 60px 0;
+  font-family: "Amatic SC bold";
+  min-height: 80vh;
 `
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 2rem 0;
-  margin: 0 0 20px 0;
+  padding: 4rem 0 0;
+  align-items: flex-start;
 `
 
 export const Timer = styled.div`
@@ -23,7 +23,7 @@ export const Timer = styled.div`
 `
 
 export const LeftTextBlock = styled.div`
-  max-width: 38%;
+  max-width: 0;
   text-align: left;
 `
 
@@ -33,22 +33,23 @@ export const RightTextBlock = styled.div`
   height: 135px;
 `
 
-export const Paragraph = styled.h1`
+export const Paragraph = styled.span`
   font-weight: 700;
-  font-size: 72px;
-  line-height: 1;
+  font-size: 96px;
+  line-height: 109px;
 `
 
 export const Text = styled.span`
   font-weight: 500;
-  font-size: 32px;
-  line-height: 142.02%;
+  font-size: 48px;
+  line-height: 68.17px;
   white-space: nowrap;
 `
 
 export const SantaBoxBtn = styled.div`
   display: grid;
   place-items: center;
+  margin-top: -65px;
 `
 
 export const SantaBtn = styled.button`

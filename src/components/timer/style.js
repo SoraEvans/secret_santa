@@ -1,10 +1,11 @@
-import { Box, CircularProgress, styled, Typography } from '@mui/material'
+import { Box, CircularProgress, styled } from '@mui/material'
 
 export const TimerWrapper = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 74px;
+  margin: 43px 0;
 `
 
 export const BoxWrapper = styled(Box)`
@@ -21,25 +22,24 @@ export const BoxInner = styled(Box)`
 
   span {
     position: absolute;
-    bottom: -35px;
-    left: 25px;
-    font-size: 18px;
+    bottom: -50px;
+    font-size: 24px;
   }
 `
 
-export const TimerItem = styled(Typography)`
-  font-size: 24px;
+export const TimerItem = styled("div")`
+  font-size: 48px;
   position: relative;
 `
 
 export const CircularProgressStyle = styled(CircularProgress)`
-  color: red;
+  color: #FF5539;
 `
 
-export const TimerTitle = styled(Typography)`
-  margin: 0 0 30px 0;
+export const TimerTitle = styled("div")`
+  margin: 0 0 40px 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 48px;
   line-height: 39px;
 `

@@ -10,7 +10,6 @@ export const InstrHeader = styled.p`
   font-size: 36px;
   line-height: 44px;
   text-align: center;
-  margin-top: 96px;
 `
 
 export const Wrapper = styled.div`

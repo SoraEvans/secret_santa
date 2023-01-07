@@ -8,7 +8,7 @@ const RegisterPage = () => {
   // const navigate = useNavigate()
 
   const onSubmit = async form => {
-    await fetch('http://backsecsanta.alwaysdata.net/api/user/register', {
+    await fetch('https://backsecsanta.alwaysdata.net/api/user/register', {
       method: 'POST',
       header: {
         'Content-Type': 'application/x-www-form-urlencoded'

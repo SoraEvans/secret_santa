@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   Head,
   Title,
@@ -24,17 +25,51 @@ import {
 
 const BoxCreate = () => {
   const [state, setState] = useState({
-    name: '',
+    title: '',
     cover: 'img',
     anonymous: false,
     email: false,
-    public: false,
-    quantity: 0,
-    date: '',
+    isPublic: false,
+    max_people_in_box: 0,
+    draw_starts_at: '',
     limit: false,
     cost: '',
     currency: 'RUB'
   })
+
+  const navigate = useNavigate()
+
+  const onSubmit = async state => {
+    await fetch('https://backsecsanta.alwaysdata.net/api/box/create', {
+      method: 'POST',
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: JSON.stringify({
+        title: state.title,
+        cover: state.cover,
+        // anonymous: state.anonymous, // отсутствует в бд
+        email: state.email,
+        isPublic: state.isPublic,
+        max_people_in_box: state.max_people_in_box,
+        draw_starts_at: state.draw_starts_at,
+        cost: state.cost,
+        creator_id: localStorage.getItem('userId')
+        // currency: state.currency // отсутствует в бд
+      })
+    })
+      // .then(response => response.text()) // Проверка ответа
+      // .then(response => {
+      //   console.log(response)
+      // })
+      .then(response => response.json())
+      .then(response => {
+        if (response.status === 'success') {
+          localStorage.setItem('isBoxCreated', true)
+          navigate('/box-created')
+        }
+      })
+  }
 
   const handleChangeForm = event => {
     const field = event.target.getAttribute('data-name')
@@ -59,12 +94,12 @@ const BoxCreate = () => {
         <DivInput>
           <Input
             required
-            data-name="name"
-            id="name"
+            data-name="title"
+            id="title"
             type="text"
             onChange={handleChangeForm}
           />
-          <Label for="name">Название коробки</Label>
+          <Label for="title">Название коробки</Label>
         </DivInput>
         <Cover>
           <P>Обложка коробки</P>
@@ -107,8 +142,8 @@ const BoxCreate = () => {
             <p>какой-то текст</p>
           </div>
           <AntSwitch
-            checked={state.public}
-            name="public"
+            checked={state.isPublic}
+            name="isPublic"
             onChange={handleChangeSwitch}
             inputProps={{ 'aria-label': 'controlled' }}
           />
@@ -117,26 +152,26 @@ const BoxCreate = () => {
           <DivInput>
             <SmallInput
               required
-              data-name="quantity"
-              id="quantity"
+              data-name="max_people_in_box"
+              id="max_people_in_box"
               type="number"
               min="0"
               onChange={handleChangeForm}
             />
-            <SmallLabel for="quantity">
+            <SmallLabel for="max_people_in_box">
               Введите максимальное количество участников
             </SmallLabel>
           </DivInput>
           <DivInput>
             <SmallInput
               required
-              data-name="date"
-              id="date"
+              data-name="draw_starts_at"
+              id="draw_starts_at"
               type="date"
               min="2022-12-01"
               onChange={handleChangeForm}
             />
-            <SmallLabel for="date">
+            <SmallLabel for="draw_starts_at">
               Выберите дату проведения автоматической жеребьевки
             </SmallLabel>
           </DivInput>
@@ -170,7 +205,14 @@ const BoxCreate = () => {
         </div>
         <ButtonsDiv>
           <CancellButton type="button">Отмена</CancellButton>
-          <CreateButton type="button">Создать коробку</CreateButton>
+          <CreateButton
+            type="button"
+            onClick={() => {
+              onSubmit(state)
+            }}
+          >
+            Создать коробку
+          </CreateButton>
         </ButtonsDiv>
       </div>
     </Container>

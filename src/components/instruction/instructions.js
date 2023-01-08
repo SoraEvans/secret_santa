@@ -11,6 +11,7 @@ import {
   Wrapper
 } from './style'
 import Santa from '../../assets/images/santa.svg'
+import Leaves from '../../assets/images/leaves.svg'
 import oneIcon from '../../assets/images/ONE.svg'
 import twoIcon from '../../assets/images/TWO.svg'
 import threeIcon from '../../assets/images/THREE.svg'
@@ -27,7 +28,10 @@ const arr = [
 const Instructions = () => (
   <InstrSec>
     <Container>
-      <InstrHeader>Инструкция по применению</InstrHeader>
+      <InstrHeader>
+        <div style={{ marginRight: 32 }}>Инструкция по применению</div>
+        <img src={Leaves} alt='' />
+      </InstrHeader>
       <Wrapper>
         <InstrList>
           <Grid container rowSpacing={1}>

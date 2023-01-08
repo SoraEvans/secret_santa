@@ -3,9 +3,10 @@ import {
   Accordion,
   AccordionSummary
 } from '@mui/material'
-import ArrowDownward from '@mui/icons-material/ArrowDownward'
 import DATA_FAQ from '../../constants'
 import { AccordionSection, AccordionWrapper, Container, QuestionText, StyledAccordionDetails, Title } from './style'
+import arrowColor from '../../assets/images/accord_arrow_color.svg'
+import arrowGray from '../../assets/images/accord_arrow_gray.svg'
 
 const AccordionFaq = () => {
   const [expanded, setExpanded] = useState(false)
@@ -27,7 +28,7 @@ const AccordionFaq = () => {
               <AccordionSummary
                 id="panel1-header"
                 aria-controls="panel1-content"
-                expandIcon={<ArrowDownward />}
+                expandIcon={n % 2 ? <img src={arrowGray} alt='' /> : <img src={arrowColor} alt='' />}
                 style={{ border: '2px solid #D8D2CD', borderRadius: 4 }}
               >
                 <QuestionText>{item.question}</QuestionText>

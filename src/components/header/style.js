@@ -33,7 +33,7 @@ export const Logo = styled.a.attrs({
 export const SignUpLink = styled(Link)`
   color: black;
   text-decoration: none;
-  background-color: #FF5539;
+  background-color: #FF7D68;
   width: 205px;
   border-radius: 4px;
   padding: 15px 0;

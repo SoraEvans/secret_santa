@@ -7,11 +7,13 @@ export const InstrSec = styled.section`
 
 export const InstrHeader = styled.p`
   font-family: "Amatic SC bold";
-  display: inline-block;
   font-weight: 600;
   font-size: 56px;
   line-height: 44px;
   text-align: center;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
 `
 
 export const Wrapper = styled.div`
@@ -25,13 +27,6 @@ export const InstrList = styled.div`
   justify-content: space-between;
   width: 60%;
   margin-top: 35px;
-`
-
-export const InstrNums = styled.ul`
-  margin: 20px 0 0;
-  display: inline-block;
-  font-size: 80px;
-  list-style-type: none;
 `
 
 export const InstrNum = styled.li`

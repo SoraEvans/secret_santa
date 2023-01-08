@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../style_cont'
-import logo from '../../logo.svg'
+import logo from '../../assets/images/logo.svg'
 import { AuthorisedWrapper, BoxesAndProfileLink, HeaderEl, Logo, NotificationsLink, SignUpLink, Wrapper } from './style'
 
 

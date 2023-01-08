@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '../style_cont'
+import logo from '../../logo.svg'
 import { AuthorisedWrapper, BoxesAndProfileLink, HeaderEl, Logo, NotificationsLink, SignUpLink, Wrapper } from './style'
 
 
@@ -12,7 +13,7 @@ function Header() {
         <Container>
           <Wrapper>
             <Logo>
-              <img alt="logo" src="img/logo.svg" />
+              <img alt="logo" src={logo} />
             </Logo>
             <AuthorisedWrapper>
               <BoxesAndProfileLink to="/boxes">
@@ -36,7 +37,7 @@ function Header() {
       <Container>
         <Wrapper>
           <Logo>
-            <img alt="logo" src="img/logo.svg" />
+            <img alt="logo" src={logo} />
           </Logo>
           <SignUpLink to="/register">
             Вход и регистрация

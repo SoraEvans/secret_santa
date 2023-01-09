@@ -6,6 +6,8 @@ export const ModalBackground = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
+  top: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;

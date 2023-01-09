@@ -48,7 +48,7 @@ const Modal = ({ showModal, setShowModal }) => {
               жеребьевки.
             </ModalSubTitle>
             <ModalCloseButton
-              src="img/ModalCloseButton.svg"
+              src="/img/ModalCloseButton.svg"
               alt="Закрыть"
               onClick={() => setShowModal(prev => !prev)}
             />

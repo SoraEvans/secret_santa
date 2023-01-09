@@ -214,7 +214,8 @@ export const AntSwitch = st(Switch)(() => ({
   '& .MuiSwitch-track': {
     borderRadius: 38 / 2,
     opacity: 1,
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    backgroundColor: '#D9D9D9'
   }
 }))
 

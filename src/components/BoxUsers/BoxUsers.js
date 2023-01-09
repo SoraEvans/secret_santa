@@ -16,6 +16,7 @@ const BoxUsers = () => {
       <h2>Участники</h2>
       <UsersList>
         {userItem}
+        <UserItem style={{background: 'rgba(163,163,163,0.47)'}}>+ Добавить участника</UserItem>
       </UsersList>
       <DrawButton onClick={openModal} />
       <Modal showModal={showModal} setShowModal={setShowModal} />

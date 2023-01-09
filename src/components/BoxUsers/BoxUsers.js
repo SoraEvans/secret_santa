@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DB from '../../constants/db'
 import { UsersList, UserItem, BoxUsersWrapper } from './style';
+import DrawButton from "../draw-button/DrawButton";
+import Modal from "../modal/modal";
 
 const BoxUsers = () => {
+  const [showModal, setShowModal] = useState(false);
   const userItem = DB.users.map((user) => <UserItem key={user.id}>{user.name}</UserItem>)
-  return (
+  const openModal = () => {
+    setShowModal(prev => !prev);
+  };
 
+  return (
     <BoxUsersWrapper>
       <h2>Участники</h2>
-      <UsersList >
+      <UsersList>
         {userItem}
       </UsersList>
+      <DrawButton onClick={openModal} />
+      <Modal showModal={showModal} setShowModal={setShowModal} />
     </BoxUsersWrapper>
-
   )
 }
 

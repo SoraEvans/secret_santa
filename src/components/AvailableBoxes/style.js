@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const BoxItem = styled.div`
   background-color: #ffbfbf;
   max-width: 544px;
-  width: 100%;
   height: 142px;
   display: flex;
   align-items: center;

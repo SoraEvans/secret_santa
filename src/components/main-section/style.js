@@ -53,6 +53,8 @@ export const SantaBoxBtn = styled.div`
 `
 
 export const SantaBtn = styled.button`
+  font-family: "Amatic SC bold";
+  font-size: 24px;
   background-color: #ff5539;
   border: none;
   width: 150px;

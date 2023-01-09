@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const HeaderEl = styled.header`
-  background: #c4c5f6;
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,10 +11,11 @@ export const HeaderEl = styled.header`
 `
 
 export const Wrapper = styled.div`
+  font-family: Raleway;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 27px 20px 0;
 `
 
 export const AuthorisedWrapper = styled.div`
@@ -33,8 +33,9 @@ export const Logo = styled.a.attrs({
 export const SignUpLink = styled(Link)`
   color: black;
   text-decoration: none;
-  background-color: #CDCCCC;
+  background-color: #FF7D68;
   width: 205px;
+  border-radius: 4px;
   padding: 15px 0;
   text-align: center;
 `

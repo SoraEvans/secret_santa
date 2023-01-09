@@ -3,26 +3,28 @@ import { Link } from 'react-router-dom'
 import { Button } from '@mui/material'
 import { AuthForm, Input, Div, Label, Title } from './auth-styles'
 
-const onSubmit = async form => {
-  await fetch('http://testingsanta/api/user', {
-    method: 'POST',
-    header: {
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    body: JSON.stringify({
-      name: form.name,
-      email: form.email,
-      password: form.password
-    })
-  })
-    .then(response => response.text())
-    .then(response => {
-      console.log(response)
-    })
-}
-
 const RegisterPage = () => {
   const [form, setForm] = useState({ name: '', email: '', password: '' })
+  // const navigate = useNavigate()
+
+  const onSubmit = async form => {
+    await fetch('https://backsecsanta.alwaysdata.net/api/user/register', {
+      method: 'POST',
+      header: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: JSON.stringify({
+        name: form.name,
+        email: form.email,
+        password: form.password
+      })
+    })
+      .then(response => response.text())
+      .then(response => {
+        console.log(response)
+        // navigate('/')
+      })
+  }
 
   const handleChangeForm = event => {
     const field = event.target.getAttribute('data-name')

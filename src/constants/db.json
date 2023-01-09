@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Иван"
+    },
+    {
+      "id": 2,
+      "name": "Илья"
+    },
+    {
+      "id": 3,
+      "name": "Дарья"
+    },
+    {
+      "id": 4,
+      "name": "Анна"
+    },
+    {
+      "id": 5,
+      "name": "Денис"
+    },
+    {
+      "id": 6,
+      "name": "Марина"
+    }
+
+  ],
+
+  "boxes": [
+    {
+      "id": 1,
+      "title": "Коробка-1",
+      "creator_id": null,
+      "cover": "https://place-hold.it/100x100/666"
+    },
+    {
+      "id": 2,
+      "title": "Коробка-2",
+      "creator_id": null,
+      "cover": "https://place-hold.it/100x100/666"
+    }
+  ]
+
+
+  }
+

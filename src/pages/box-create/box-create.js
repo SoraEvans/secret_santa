@@ -123,7 +123,7 @@ const BoxCreate = () => {
               min="0"
               onChange={handleChangeForm}
             />
-            <SmallLabel for="quantity">
+            <SmallLabel htmlFor="quantity">
               Введите максимальное количество участников
             </SmallLabel>
           </DivInput>
@@ -136,7 +136,7 @@ const BoxCreate = () => {
               min="2022-12-01"
               onChange={handleChangeForm}
             />
-            <SmallLabel for="date">
+            <SmallLabel htmlFor="date">
               Выберите дату проведения автоматической жеребьевки
             </SmallLabel>
           </DivInput>

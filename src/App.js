@@ -7,6 +7,7 @@ import PasswordResetPage from './pages/auth/password-reset'
 import Home from './pages/home/home'
 import BoxCreate from './pages/box-create/box-create'
 import BoxDone from './pages/box-create/box-done'
+import MyBox from './pages/my-box/my-box'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="/box-created" element={<BoxDone />} />
 
         <Route path="/box">
-          <Route index element={<h1>Коробка</h1>} />
+          <Route index element={<MyBox />} />
           <Route path="settings" element={<h1>Настройки коробки</h1>} />
           <Route path="participants" element={<h1>Участники</h1>} />
           <Route path="my-card" element={<h1>Моя карточка</h1>} />

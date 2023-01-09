@@ -30,10 +30,10 @@ const BoxCreate = () => {
     anonymous: false,
     email: false,
     isPublic: false,
-    max_people_in_box: 0,
-    draw_starts_at: '',
+    max_people_in_box: null,
+    draw_starts_at: null,
     limit: false,
-    cost: '',
+    cost: null,
     currency: 'RUB'
   })
 
@@ -62,14 +62,11 @@ const BoxCreate = () => {
       // .then(response => {
       //   console.log(response)
       // })
+      .then(response => response.json())
       .then(response => {
-        navigate('/box-created')
-        response.json()
-      })
-      .then(response => {
-
         if (response.status === 'success') {
           localStorage.setItem('isBoxCreated', true)
+          navigate('/box-created')
         }
       })
   }

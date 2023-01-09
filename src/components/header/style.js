@@ -43,7 +43,7 @@ export const SignUpLink = styled(Link)`
 export const BoxesAndProfileLink = styled(Link)`
   color: black;
   text-decoration: none;
-  background-color: #CDCCCC;
+  background-color: #FF7D68;
   width: 131px;
   padding: 15px 0;
   text-align: center;
@@ -54,7 +54,7 @@ export const BoxesAndProfileLink = styled(Link)`
 export const NotificationsLink = styled(Link)`
   color: black;
   text-decoration: none;
-  background-color: #CDCCCC;
+  background-color: #FF7D68;
   width: 181px;
   padding: 15px 0;
   text-align: center;

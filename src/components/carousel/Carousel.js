@@ -39,6 +39,7 @@ const slides = [
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0)
+  const isLogged = localStorage.getItem('isLoggedIn');
 
   const updateIndex = newIndex => {
     let index = newIndex
@@ -53,7 +54,7 @@ const Carousel = () => {
 
   return (
     <CarouselSection>
-      <Link to="/register" style={{ textDecoration: 'none' }}>
+      <Link to={isLogged ? '/create-box' : '/register'} style={{ textDecoration: 'none' }}>
         <CarouselButton>Создать коробку</CarouselButton>
       </Link>
       <CarouselHeader>

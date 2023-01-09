@@ -62,11 +62,14 @@ const BoxCreate = () => {
       // .then(response => {
       //   console.log(response)
       // })
-      .then(response => response.json())
       .then(response => {
+        navigate('/box-created')
+        response.json()
+      })
+      .then(response => {
+
         if (response.status === 'success') {
           localStorage.setItem('isBoxCreated', true)
-          navigate('/box-created')
         }
       })
   }

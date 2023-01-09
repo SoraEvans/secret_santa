@@ -7,8 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
-  padding-bottom: 80px;
+  margin: auto;
 `
 
 export const Head = styled.div`
@@ -20,17 +19,17 @@ export const Head = styled.div`
 `
 
 export const Title = styled.h1`
-  font-family: 'Inter';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 29px;
   color: #000000;
   margin-bottom: 12px;
 `
 
 export const SubTitle = styled.p`
-  font-family: 'Inter';
+  font-family: Raleway;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -68,7 +67,6 @@ export const DivInput = styled.div`
 
 export const Label = styled.label`
   position: absolute;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -79,7 +77,6 @@ export const Label = styled.label`
 `
 
 export const P = styled.p`
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -117,7 +114,6 @@ export const CreateButton = styled.button`
   background: #fd9797;
   border-radius: 2px;
   border: 0;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -140,7 +136,6 @@ export const Select = styled.select`
   height: 61px;
   background: #f7f3f3;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -157,7 +152,6 @@ export const CostInput = styled.input`
   height: 55px;
   background: #f7f3f3;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -166,20 +160,21 @@ export const CostInput = styled.input`
 `
 
 export const Img = styled.img`
-  width: 368px;
-  height: 368px;
+  margin-left: 320px;
 `
 
 export const Button = styled.button`
+  font-family: Raleway;
   width: 291px;
   height: 81px;
-  background: #fd9797;
-  font-family: 'Inter';
+  background: #FF5539;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 24px;
-  color: #000000;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
 `
 
 export const AntSwitch = st(Switch)(() => ({
@@ -227,10 +222,11 @@ export const ContainerBoxCreated = styled.div`
 `
 
 export const TitleBoxCreated = styled.h1`
-  font-family: 'Inter';
+  font-family: "Amatic SC bold";
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 58px;
+  margin: 0 0 12px;
   line-height: 77px;
   color: #000000;
 `

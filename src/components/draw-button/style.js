@@ -2,6 +2,11 @@ import { styled  as st } from "@mui/material/styles";
 import styled from 'styled-components'
 import { Button } from "@mui/material";
 
+export const ButtonBlock = styled.div`
+display: block;
+position: relative;
+top: 100px;
+`
 
 export const StartDrawButton = st(Button)({
   display: 'block',

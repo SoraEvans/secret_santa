@@ -6,6 +6,7 @@ import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import MyBoxTabs from '../../components/MyBoxTabs/MyBoxTabs'
 import DB from '../../constants/db'
+import DrawButton from "../../components/draw-button/DrawButton";
 
 
 
@@ -25,9 +26,12 @@ const MyBox = () => (
               <span>{`${DB.users.length} участников`}</span>
             </BoxTitleText>
           </BoxTitleInner>
+          <MyBoxTabs />
+          <DrawButton/>
         </Container>
-        <MyBoxTabs />
+
       </MyBoxMain>
+
       <Footer />
     </>
 

@@ -31,7 +31,7 @@ export const TabItem = styled(Tab)`
   height: 181px;
 `
 export const TabBody = styled(Box)`
-  position: absolute;
-  top: 300px;
+  position: relative;
+  top: 100px;
   left: 150px;
 `

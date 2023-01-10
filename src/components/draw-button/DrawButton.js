@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-import React, { useState } from 'react'
-import { ButtonBlock, ButtonText, StartDrawButton } from "./style";
-import Modal from "../modal/modal";
-import DB from "../../constants/db";
-
-const DrawButton = () => {
-=======
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ButtonBlock, ButtonText, StartDrawButton } from './style'
 import DB from '../../constants/db'
->>>>>>> a35b45f4c33c2a954e7e256b634259d1bd35cf41
 
 const DrawButton = ({ onClick }) => {
   const participantsCount = DB.users.length; // Здесь будет подсчёт пользователей
@@ -35,7 +26,7 @@ const DrawButton = ({ onClick }) => {
 }
 
 DrawButton.defaultProps = {
-  onClick: () => {}
+  onClick: () => { }
 }
 
 DrawButton.propTypes = {

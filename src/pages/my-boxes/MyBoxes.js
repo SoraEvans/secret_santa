@@ -3,7 +3,7 @@ import { TabBox, TabItem, BoxWrapper, BoxItem } from './style'
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import PrivateBox from '../../components/PrivateBox/PrivateBox'
-import Cont from '../../components/style_cont'
+import Container from '../../components/style_cont'
 import PublicBox from '../../components/PublicBox/PublicBox'
 
 const MyBoxes = () => {
@@ -16,7 +16,7 @@ const MyBoxes = () => {
     <>
       <Header />
 
-      <Cont>
+      <Container>
         <BoxWrapper>
           <TabBox value={tabIdx} onChange={handlerChangeTab}>
             <TabItem label="Приватные коробки" />
@@ -25,7 +25,8 @@ const MyBoxes = () => {
           <BoxItem>{tabIdx === 0 && <PrivateBox />}</BoxItem>
           <BoxItem>{tabIdx === 1 && <PublicBox />}</BoxItem>
         </BoxWrapper>
-      </Cont>
+
+      </Container>
 
       <Footer />
     </>

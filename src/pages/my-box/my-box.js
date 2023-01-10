@@ -10,6 +10,7 @@ import DrawButton from "../../components/draw-button/DrawButton";
 
 
 
+
 const MyBox = () => (
 
 
@@ -27,7 +28,7 @@ const MyBox = () => (
             </BoxTitleText>
           </BoxTitleInner>
           <MyBoxTabs />
-          <DrawButton/>
+           <DrawButton/>
         </Container>
 
       </MyBoxMain>

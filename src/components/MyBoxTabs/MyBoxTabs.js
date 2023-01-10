@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { TabsWrapper, TabsInner, TabItem, TabBody } from './style'
 import BoxUsers from '../BoxUsers/BoxUsers'
 
+
 const MyBoxTabs = () => {
   const [activeIdx, setActiveIdx] = useState(0)
 
@@ -21,7 +22,10 @@ const MyBoxTabs = () => {
           <TabItem label="Мой подопечный" />
         </TabsInner>
       </TabsWrapper>
-      <TabBody>{activeIdx === 0 && <BoxUsers />}</TabBody>
+      <TabBody>
+        {activeIdx === 0 &&
+          <BoxUsers />}
+      </TabBody>
     </>
   )
 }

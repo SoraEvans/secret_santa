@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ButtonBlock, ButtonText, StartDrawButton } from "./style";
 import Modal from "../modal/modal";
-import DB from "../../constants/db.json";
+import DB from "../../constants/db";
 
 const DrawButton = () => {
 

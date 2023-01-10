@@ -13,7 +13,7 @@ export const BtnAdd = styled.button`
   cursor: pointer;
 `
 
-export const BoxInner = styled.div`
+export const BoxInner = styled.button`
   width: 140px;
   height: 140px;
   background-color: #ffbfbf;

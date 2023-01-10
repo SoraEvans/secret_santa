@@ -49,6 +49,7 @@ export const BoxesAndProfileLink = styled(Link)`
   text-align: center;
   margin-left: 15px;
   display: block;
+  border-radius: 4px;
 `
 
 export const NotificationsLink = styled(Link)`
@@ -60,4 +61,5 @@ export const NotificationsLink = styled(Link)`
   text-align: center;
   margin-left: 15px;
   display: block;
+  border-radius: 4px;
 `

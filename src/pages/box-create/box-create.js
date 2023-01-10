@@ -30,10 +30,10 @@ const BoxCreate = () => {
     anonymous: false,
     email: false,
     isPublic: false,
-    max_people_in_box: 0,
-    draw_starts_at: '',
+    max_people_in_box: null,
+    draw_starts_at: null,
     limit: false,
-    cost: '',
+    cost: null,
     currency: 'RUB'
   })
 

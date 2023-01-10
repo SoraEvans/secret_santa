@@ -1,9 +1,7 @@
 import { Tabs, Tab, Box, styled } from '@mui/material'
 
 export const BoxWrapper = styled(Box)`
-  min-height: 100vh;
-  width: 100%;
-  padding-top: 180px;
+  padding: 180px 0 0 220px;
 `
 
 export const TabBox = styled(Tabs)`

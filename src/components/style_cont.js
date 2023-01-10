@@ -3,8 +3,9 @@ import styled from 'styled-components'
 // Контейнер HTML
 
 const Container = styled.div`
-  margin: 0 auto;
-  padding: 0 15px;
+  flex: 1;
+  width: 100%;
+  position: relative;
 `
 
 export default Container
